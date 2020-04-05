@@ -9,6 +9,6 @@
 #include "hash.h"
 
 //void write(char str[]);
-void GetDic(char* string);
+void GetDic();
 
 #endif //ED_PROJECT_ARCHIVE_H
