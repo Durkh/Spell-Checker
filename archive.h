@@ -6,10 +6,9 @@
 #define ED_PROJECT_ARCHIVE_H
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "hash.h"
 
-void write(char str[]);
-void read(char* string);
+//void write(char str[]);
+void GetDic(char* string);
 
 #endif //ED_PROJECT_ARCHIVE_H

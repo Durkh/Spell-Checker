@@ -4,6 +4,7 @@
 
 #include "archive.h"
 
+/*
 void write(char str[]){
     FILE *file;
 
@@ -12,20 +13,20 @@ void write(char str[]){
     fprintf(file, "%s", str);
 
     fclose(file);
-}
+}*/
 
-void read(char* string){
+void GetDic(){
     FILE *file;
     char str[sizeof(string)];
 
-    file = fopen("C:\\Users\\iogos\\Desktop\\Str.txt", "r");
+    file = fopen("ascii_noaccent_noduplicates_FIXED_v2", "r");
 
     if(file == NULL){
         strcpy(string, "NULL");
     }
 
-    while(fgets(str, sizeof(str), file) != NULL)
-        strcat(string, str);
+    while (fgets(str, sizeof(str), file) != NULL)
+        Insert(str);
 
     fclose(file);
 }
