@@ -19,12 +19,11 @@ void GetDic(){
     FILE *file;
     char str[30];
 
-    file = fopen("ascii_noaccent_noduplicates_FIXED_v2", "r");
+    file = fopen("ascii_noaccent_noduplicates_FIXED_v2.txt", "r");
 
     if(file == NULL){
-        strcpy(string, "NULL");
+        strcpy(str, "NULL");
     }
-
     while (fgets(str, sizeof(str), file) != NULL){
         for(int i = 0; i < strlen(str); i++){
             if(str[i] == '\n')
