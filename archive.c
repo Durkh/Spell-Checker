@@ -26,7 +26,7 @@ void GetDic(){
     }
 
     while (fgets(str, sizeof(str), file) != NULL){
-        for(int i = 0; i < sizeof(str)/sizeof(char); i++){
+        for(int i = 0; i < strlen(str); i++){
             if(str[i] == '\n')
                 str[i] = '\0';
         }
