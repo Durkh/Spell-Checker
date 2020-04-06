@@ -2,14 +2,16 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
-#define NUM_BUCKS 5000
+#define NUM_BUCKS 100000
 
 typedef struct tmp {
-	const char palavra[50];
+	char palavra[50];
 	struct tmp* next;
 }node;
 
-int Key(char* str);
+unsigned long Key(char* str);
 void Insert(char* palavra);
 int Find(char* palavra);
+void Diagnose();

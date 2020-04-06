@@ -4,16 +4,14 @@
 
 #include "archive.h"
 
-unsigned long int totalPalavras = 0;
-unsigned long int failed = 0;
-
 void CmpFile(){
     FILE *file;
+    char str[40];
 
     file = fopen("constituicao_final_lindinha_e_bem_tratada.txt", "r");
 
      if(file == NULL){
-        printf"error file 2");
+        printf("error file 2");
         return;
     }
     while (fscanf(file,"%s", str) != EOF){
@@ -29,7 +27,7 @@ void CmpFile(){
 
 void GetDic(){
     FILE *file;
-    char str[30];
+    char str[40];
 
     file = fopen("ascii_noaccent_noduplicates_FIXED_v2.txt", "r");
 
