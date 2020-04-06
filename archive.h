@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "hash.h"
 
-//void write(char str[]);
+void CmpFile();
 void GetDic();
 
 #endif //ED_PROJECT_ARCHIVE_H

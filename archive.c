@@ -4,16 +4,28 @@
 
 #include "archive.h"
 
-/*
-void write(char str[]){
+unsigned long int totalPalavras = 0;
+unsigned long int failed = 0;
+
+void CmpFile(){
     FILE *file;
 
-    file = fopen("C:\\Users\\iogos\\Desktop\\Str.txt", "w");
+    file = fopen("constituicao_final_lindinha_e_bem_tratada.txt", "r");
 
-    fprintf(file, "%s", str);
+     if(file == NULL){
+        printf"error file 2");
+        return;
+    }
+    while (fscanf(file,"%s", str) != EOF){
+        if(str[0] == '-') continue;
+        totalPalavras++;
+        if(!Find(str)){
+            failed++;
+        }
+    }
 
     fclose(file);
-}*/
+}
 
 void GetDic(){
     FILE *file;

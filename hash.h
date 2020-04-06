@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define NUM_BUCKS 500
+#define NUM_BUCKS 5000
 
 typedef struct tmp {
 	const char palavra[50];
