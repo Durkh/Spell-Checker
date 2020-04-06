@@ -17,7 +17,7 @@ void write(char str[]){
 
 void GetDic(){
     FILE *file;
-    char str[sizeof(string)];
+    char str[30];
 
     file = fopen("ascii_noaccent_noduplicates_FIXED_v2", "r");
 
@@ -25,8 +25,13 @@ void GetDic(){
         strcpy(string, "NULL");
     }
 
-    while (fgets(str, sizeof(str), file) != NULL)
+    while (fgets(str, sizeof(str), file) != NULL){
+        for(int i = 0; i < sizeof(str)/sizeof(char); i++){
+            if(str[i] == '\n')
+                str[i] = '\0';
+        }
         Insert(str);
+    }
 
     fclose(file);
 }
