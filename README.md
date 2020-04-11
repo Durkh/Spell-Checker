@@ -1,2 +1,2 @@
 # Spell-Checker
-spell checker implemented in C, as the project to the matter Data Structures
+spell checker implemented in C, as the project to the subject Data Structures
